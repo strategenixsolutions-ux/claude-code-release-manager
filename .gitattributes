@@ -1,0 +1,4 @@
+# Keep bytes as committed. The release kit hashes files, so git must not rewrite them,
+# except the .cmd launcher, which cmd.exe wants in CRLF.
+* -text
+*.cmd text eol=crlf

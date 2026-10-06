@@ -1,0 +1,43 @@
+{
+  "workspaceRoot": ".",
+  "charterFile": "CLAUDE.md",
+  "corePaths": [
+    ".claude/agents",
+    ".claude/skills",
+    ".claude/settings.json",
+    "docs/FOLDER-GUIDE.md",
+    "docs/releases/scripts",
+    "docs/releases/templates",
+    "scripts"
+  ],
+  "excludePaths": [],
+  "skillsPath": ".claude/skills",
+  "requestsDir": "docs/requests",
+  "releasesDir": "docs/releases",
+  "queueFile": "docs/releases/RELEASE-QUEUE.md",
+  "changelogFile": "CHANGELOG.md",
+  "activityLogFile": "docs/activity-log.md",
+  "roles": {
+    "owner": "workspace owner",
+    "operator": "release operator",
+    "requester": "requester"
+  },
+  "version": {
+    "scheme": "date",
+    "format": "yyyy.MM.dd",
+    "sameDaySuffix": "letter"
+  },
+  "schedule": {
+    "timezone": "Local",
+    "cutTime": "01:00",
+    "retryTime": "05:30",
+    "taskFolder": "\\ClaudeReleaseManager\\",
+    "taskName": "NightlyRelease",
+    "wakeToRun": false,
+    "claudeExe": "claude",
+    "claudeArgs": "",
+    "prompt": "run the nightly release",
+    "logFile": "docs/releases/nightly.log",
+    "stampFile": ""
+  }
+}
